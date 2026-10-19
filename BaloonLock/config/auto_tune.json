@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "cv_accel_noise": 141.513,
+    "ca_jerk_noise": 8855.2898,
+    "imm_stay": 0.9821,
+    "meas_sigma_base": 1.0,
+    "meas_sigma_blur": 2.0,
+    "gain_min": 0.3,
+    "gain_max": 0.8,
+    "confidence_scale": 7.116,
+    "blur_speed_px_s": 224.938,
+    "blur_relax_s": 8.1279,
+    "blur_relax_v": 13.1931,
+    "speed_cap_gain": 2.0912,
+    "min_step_deg": 3.5219
+  },
+  "score": 36.694,
+  "default_score": 46.276,
+  "trials": 150,
+  "seed": 1,
+  "runs": [
+    "light_balloon @30fps",
+    "light_balloon @60fps",
+    "heavy_toss @30fps",
+    "heavy_toss @60fps",
+    "bounce @30fps",
+    "bounce @60fps",
+    "drift @30fps",
+    "drift @60fps",
+    "direction_change @30fps",
+    "direction_change @60fps"
+  ],
+  "created": "2026-10-11T18:29:20",
+  "note": "Written by tune_params.py. Only tuning parameters - no safety settings."
+}

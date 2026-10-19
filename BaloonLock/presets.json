@@ -1,0 +1,10 @@
+{
+  "_comment": "HSV presets per balloon color. OpenCV hue is 0-179. If h_min > h_max the range WRAPS around (used for red: 170..179 plus 0..8). These are starting points - tune with: python balloon_detect.py --preset NAME, then press s to save.",
+  "red":    {"h_min": 170, "h_max": 8,   "s_min": 120, "s_max": 255, "v_min": 70,  "v_max": 255, "min_area": 500},
+  "orange": {"h_min": 8,   "h_max": 22,  "s_min": 120, "s_max": 255, "v_min": 100, "v_max": 255, "min_area": 500},
+  "yellow": {"h_min": 22,  "h_max": 35,  "s_min": 100, "s_max": 255, "v_min": 100, "v_max": 255, "min_area": 500},
+  "green":  {"h_min": 40,  "h_max": 85,  "s_min": 80,  "s_max": 255, "v_min": 50,  "v_max": 255, "min_area": 500},
+  "blue":   {"h_min": 95,  "h_max": 130, "s_min": 100, "s_max": 255, "v_min": 50,  "v_max": 255, "min_area": 500},
+  "purple": {"h_min": 130, "h_max": 155, "s_min": 60,  "s_max": 255, "v_min": 40,  "v_max": 255, "min_area": 500},
+  "pink":   {"h_min": 155, "h_max": 175, "s_min": 50,  "s_max": 255, "v_min": 120, "v_max": 255, "min_area": 500}
+}

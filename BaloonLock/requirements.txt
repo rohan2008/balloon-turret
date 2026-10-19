@@ -1,0 +1,16 @@
+# BalloonLock - everything the project imports, pinned to the versions it was
+# tested with (Python 3.11.9 on Windows 11).
+#     python -m pip install -r requirements.txt
+#
+# NOTE: use opencv-python, NOT opencv-python-headless (headless can't open windows).
+
+opencv-python==4.11.0.86   # camera, image processing, windows   (import cv2)
+numpy==2.2.6               # arrays / math                        (import numpy)
+pyserial==3.5              # USB serial to the Arduino           (import serial)
+pynput==1.8.1              # dry-run fire key: real key-down/up  (from pynput import keyboard)
+
+# AI balloon detector (YOLOv8 trained on Open Images). ultralytics needs
+# PyTorch; these are the CPU builds that pip installs on Windows (~1 GB total).
+ultralytics==8.4.175
+torch==2.7.0
+torchvision==0.22.0

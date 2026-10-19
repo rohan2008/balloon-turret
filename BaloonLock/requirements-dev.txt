@@ -1,0 +1,10 @@
+# Optional extras for development.
+#     python -m pip install -r requirements-dev.txt
+#
+# The test suite uses Python's built-in unittest (python -m unittest -v), so
+# NOTHING here is required to run the tests. pytest is only a nicer test runner
+# (python -m pytest -q); it was not installed when this file was written, so
+# running the suite with pytest hasn't been verified.
+
+-r requirements.txt
+pytest==8.4.2
